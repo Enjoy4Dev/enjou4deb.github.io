@@ -1,0 +1,685 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Коняки">
+    <meta name="author" content="We IT Support">
+    <meta name="title" content="Лошадки">
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+    <title>Лошадки</title>
+    <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style id="holderjs-style" type="text/css"></style>
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+</head>
+
+
+
+<body>
+    <main>
+
+
+        <div class="nav_bar">
+            <div class="nav_content">
+                <!-- <a class="menu_logo" href="#main_slide"> -->
+                <div id="main_a" class="menu_logo">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8vh" height="8vh">
+                        <image id="logo_image" data-name="logo" width="8vh" height="8vh" xlink:href="data:img/png;base64,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"
+                        />
+                    </svg>
+                    <!-- <img id="logo_image"  src="images/logo.png"> -->
+                </div>
+                <div id="" class="nav_a">
+                    <a data-link="icons">Предложения</a>
+                    <a data-link="advantages">Преимущества</a>
+                    <a data-link="horseSlide">Лошади</a>
+                    <a data-link="contact">Карта</a>
+                    <a data-link="my_form">Присоединиться</a>
+                </div>
+                <div class="mail_div">
+                    <a href="mailto:best-ride@mail.ru">best-ride@mail.ru</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="top_space"></div>
+        <div class="main_slide" id="main_slide">
+            <div class="main_slide_text_block">
+
+                <p class="title_light">Конно-спортивный клуб</p>
+                <p class="title_bold">Best-Ride</p>
+                <p class="small_gray_text text_separator_left">Школа верховой езды в Москве для детей и взрослых.
+                </p>
+                <button class="button main_button">Присоедениться</button>
+            </div>
+
+
+            <img src="images/main_image_horse.png" class="main_image">
+
+            <div class="parallax main_bg mask"></div>
+            <div class="sub_bg mask"></div>
+
+
+        </div>
+
+
+        <div id="icons" class="icons_container scroll_data" data-anchor="icons">
+
+            <h2>Мы предлагаем</h2>
+
+
+            <div class="icons_table">
+                <div class="icons_row">
+                    <div class="icons_block">
+                        <img id="icon_1" src="images/icon_1.png" alt="Иконка игрушечной лошадки">
+                        <div class="icons_separator"></div>
+                        <div class="icons_text"> Уроки верховой езды для детей от 3 лет </div>
+                    </div>
+
+                    <div class="icons_block">
+                        <img id="icon_2" src="images/icon_2.png" alt="Иконка игрушечной лошадки">
+                        <div class="icons_separator"></div>
+                        <div class="icons_text"> Обучение верховой езде начинающих всадников
+                        </div>
+                    </div>
+
+                    <div class="icons_block">
+                        <img id="icon_3" src="images/icon_3.png" alt="Иконка игрушечной лошадки">
+                        <div class="icons_separator"></div>
+                        <div class="icons_text "> Занятие по cпециализации выездка </div>
+                    </div>
+
+
+                </div>
+                <div class="icons_row">
+                    <div class="icons_block">
+                        <img id="icon_4" src="images/icon_4.png" alt="Иконка игрушечной лошадки">
+                        <div class="icons_separator"></div>
+                        <div class="icons_text"> Занятие по специализации конкур</div>
+                    </div>
+
+
+                    <div class="icons_block">
+                        <div class="icon icon_content_bottom_5">
+                            <!-- <img id="icon_5" src="images/icon_5.png" alt="Иконка игрушечной лошадки"> -->
+                            <img id="icon_5_1" src="images/icon_5_1.png" alt="Иконка игрушечной лошадки">
+                            <img id="icon_5_2" src="images/icon_5_2.png" alt="Иконка игрушечной лошадки">
+                            <!-- <img id="icon_5_3" src="images/icon_5_2.png" alt="Иконка игрушечной лошадки"> -->
+                        </div>
+                        <div class="icons_separator"></div>
+                        <div class="icons_text"> Аренда и пол-аренды лошади</div>
+
+                    </div>
+
+
+                    <div class="icons_block">
+                        <div class="icon icon_content_bottom_6">
+                            <!-- <img id="icon_6" src="images/icon_6.png" alt="Иконка игрушечной лошадки"> -->
+                            <img id="icon_6_1" src="images/icon_6_1.png" alt="Иконка игрушечной лошадки">
+                            <img id="icon_6_2" src="images/icon_6_2.png" alt="Иконка игрушечной лошадки">
+                        </div>
+                        <div class="icons_separator"></div>
+                        <div class="icons_text"> Гимнастика на лошади для детей и взрослых </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="advantages" class="advantages_container scroll_data" data-anchor="advantages">
+
+
+            <div class="advantages_image_1 advantages_image"></div>
+
+            <div class="advantages_text_1 advantages_text_container">
+                <p class="advantages_title">Разделяем взгляды</p>
+                <p class="advantages_text text_separator_left">
+                    Наши уроки верховой езды нацелены на результат, и мы подбираем индивидуальный подход к каждому клиенту
+
+                </p>
+            </div>
+
+
+            <div class="advantages_image_2 advantages_image"></div>
+            <div class="advantages_text_2 advantages_text_container advantages_right">
+                <p class="advantages_title">О детях</p>
+                <p class="advantages_text  text_separator_right">
+                    Есть возможность выступать как на территории КСК, где проводятся соревнования, так и выезжать на другие соревнования по любым
+                    дисциплинам
+                </p>
+            </div>
+
+
+            <div class="advantages_image_3 advantages_image"></div>
+            <div class="advantages_text_3 advantages_text_container">
+                <p class="advantages_title">Спокойные лошади</p>
+                <p class="advantages_text text_separator_left">
+                    Наши уроки верховой езды нацелены на результат, и мы подбираем индивидуальный подход к каждому клиенту
+
+                </p>
+            </div>
+
+
+            <div class="advantages_image_4 advantages_image"></div>
+            <div class="advantages_text_4 advantages_text_container advantages_right">
+                <p class="advantages_title">Преодолеваем препятствия</p>
+                <p class="advantages_text text_separator_right">
+                    Наши уроки верховой езды нацелены на результат, и мы подбираем индивидуальный подход к каждому клиенту
+                </p>
+            </div>
+
+
+            <div class="advantages_image_5 advantages_image"></div>
+            <div class="advantages_text_5 advantages_text_container">
+                <p class="advantages_title">Свобода</p>
+                <p class="advantages_text text_separator_left">
+                    До нашего конно спортивного клуба легко добраться как своим ходом, так и на машине
+
+
+                </p>
+            </div>
+        </div>
+
+        <div id="horseSlide" class="sliders">
+            <h2>Наши лошади</h2>
+
+            <div class="swiper-container horses_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide horses_slide_c">
+                        <div class="horses_slide_i flex_column">
+                            <div class="lightGallery">
+                                <div class="slide_img_c" data-src="https://www.horseplushumanesociety.org/wp-content/uploads/2017/01/button2-270x250.jpg">
+                                    <img class="slide_img" src="https://www.horseplushumanesociety.org/wp-content/uploads/2017/01/button2-270x250.jpg">
+                                    <div class="hover_gray">
+                                        <img src="images/zoom_icon.png" alt="zoom icon">
+                                    </div>
+                                </div>
+                                <div data-src="https://wallpapersite.com/images/wallpapers/jumping-horse-2880x1800-strong-horse-hd-3000.jpg"></div>
+                                <div data-src="https://images.ua.prom.st/549282580_w640_h640_cid369720_pid39929267-cf203b20.jpg"></div>
+                                <div data-src="https://www.meme-arsenal.com/memes/cafadea3c0e81096fb3f0cc1bcca0f3a.jpg"></div>
+                            </div>
+                            <div class="slider_separator"></div>
+                            <div class="horse_slide_description_c">
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Кличка:</p>
+                                    <p class="h_s_d_desc">Рыжий</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Порода:</p>
+                                    <p class="h_s_d_desc">Лучшая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Масть:</p>
+                                    <p class="h_s_d_desc">Гнедая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">История:</p>
+                                    <p class="h_s_d_desc">Игривый, любит детей и вообще милашка</p>
+                                </div>
+                            </div>
+                            <button class="slide_button" data-content="horseForm">Хочу познакомиться!</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide_c">
+                        <div class="horses_slide_i flex_column">
+                            <div class="lightGallery">
+                                <div class="slide_img_c" data-src="https://www.horseplushumanesociety.org/wp-content/uploads/2017/01/button2-270x250.jpg">
+                                    <img class="slide_img" src="https://cdn.pixabay.com/photo/2016/02/15/13/26/horse-1201143__340.jpg">
+                                    <div class="hover_gray">
+                                        <img src="images/zoom_icon.png" alt="zoom icon">
+                                    </div>
+                                </div>
+                                <div data-src="https://wallpapersite.com/images/wallpapers/jumping-horse-2880x1800-strong-horse-hd-3000.jpg"></div>
+                                <div data-src="https://images.ua.prom.st/549282580_w640_h640_cid369720_pid39929267-cf203b20.jpg"></div>
+                                <div data-src="https://www.meme-arsenal.com/memes/cafadea3c0e81096fb3f0cc1bcca0f3a.jpg"></div>
+                            </div>
+                            <div class="slider_separator"></div>
+                            <div class="horse_slide_description_c">
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Кличка:</p>
+                                    <p class="h_s_d_desc">Рыжий</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Порода:</p>
+                                    <p class="h_s_d_desc">Лучшая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Масть:</p>
+                                    <p class="h_s_d_desc">Гнедая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">История:</p>
+                                    <p class="h_s_d_desc">Игривый, любит детей и вообще милашка</p>
+                                </div>
+                            </div>
+                            <button class="slide_button" data-content="horseForm">Хочу познакомиться!</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide_c">
+                        <div class="horses_slide_i flex_column">
+                            <div class="lightGallery">
+                                <div class="slide_img_c" data-src="https://www.horseplushumanesociety.org/wp-content/uploads/2017/01/button2-270x250.jpg">
+                                    <img class="slide_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_-Ws9deGJQ94RTzEhM9xAQeH1Y-C_s70ISgIh_DItZSek2whWZQ">
+                                    <div class="hover_gray">
+                                        <img src="images/zoom_icon.png" alt="zoom icon">
+                                    </div>
+                                </div>
+                                <div data-src="https://wallpapersite.com/images/wallpapers/jumping-horse-2880x1800-strong-horse-hd-3000.jpg"></div>
+                                <div data-src="https://images.ua.prom.st/549282580_w640_h640_cid369720_pid39929267-cf203b20.jpg"></div>
+                                <div data-src="https://www.meme-arsenal.com/memes/cafadea3c0e81096fb3f0cc1bcca0f3a.jpg"></div>
+                            </div>
+                            <div class="slider_separator"></div>
+                            <div class="horse_slide_description_c">
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Кличка:</p>
+                                    <p class="h_s_d_desc">Рыжий</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Порода:</p>
+                                    <p class="h_s_d_desc">Лучшая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Масть:</p>
+                                    <p class="h_s_d_desc">Гнедая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">История:</p>
+                                    <p class="h_s_d_desc">Игривый, любит детей и вообще милашка</p>
+                                </div>
+                            </div>
+                            <button class="slide_button" data-content="horseForm">Хочу познакомиться!</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide_c">
+                        <div class="horses_slide_i flex_column">
+                            <div class="lightGallery">
+                                <div class="slide_img_c" data-src="https://www.horseplushumanesociety.org/wp-content/uploads/2017/01/button2-270x250.jpg">
+                                    <img class="slide_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcDnphjgk6maQ3cdjlvfg2FidS5bToEHYjUDOJzwJfHo8b_sKJ0A">
+                                    <div class="hover_gray">
+                                        <img src="images/zoom_icon.png" alt="zoom icon">
+                                    </div>
+                                </div>
+                                <div data-src="https://wallpapersite.com/images/wallpapers/jumping-horse-2880x1800-strong-horse-hd-3000.jpg"></div>
+                                <div data-src="https://images.ua.prom.st/549282580_w640_h640_cid369720_pid39929267-cf203b20.jpg"></div>
+                                <div data-src="https://www.meme-arsenal.com/memes/cafadea3c0e81096fb3f0cc1bcca0f3a.jpg"></div>
+                            </div>
+                            <div class="slider_separator"></div>
+                            <div class="horse_slide_description_c">
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Кличка:</p>
+                                    <p class="h_s_d_desc">Рыжий</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Порода:</p>
+                                    <p class="h_s_d_desc">Лучшая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Масть:</p>
+                                    <p class="h_s_d_desc">Гнедая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">История:</p>
+                                    <p class="h_s_d_desc">Игривый, любит детей и вообще милашка</p>
+                                </div>
+                            </div>
+                            <button class="slide_button" data-content="horseForm">Хочу познакомиться!</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide_c">
+                        <div class="horses_slide_i flex_column">
+                            <div class="lightGallery">
+                                <div class="slide_img_c" data-src="https://www.horseplushumanesociety.org/wp-content/uploads/2017/01/button2-270x250.jpg">
+                                    <img class="slide_img" src="https://www.horseplushumanesociety.org/wp-content/uploads/2017/01/button2-270x250.jpg">
+                                    <div class="hover_gray">
+                                        <img src="images/zoom_icon.png" alt="zoom icon">
+                                    </div>
+                                </div>
+                                <div data-src="https://wallpapersite.com/images/wallpapers/jumping-horse-2880x1800-strong-horse-hd-3000.jpg"></div>
+                                <div data-src="https://images.ua.prom.st/549282580_w640_h640_cid369720_pid39929267-cf203b20.jpg"></div>
+                                <div data-src="https://www.meme-arsenal.com/memes/cafadea3c0e81096fb3f0cc1bcca0f3a.jpg"></div>
+                            </div>
+                            <div class="slider_separator"></div>
+                            <div class="horse_slide_description_c">
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Кличка:</p>
+                                    <p class="h_s_d_desc">Рыжий</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Порода:</p>
+                                    <p class="h_s_d_desc">Лучшая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">Масть:</p>
+                                    <p class="h_s_d_desc">Гнедая</p>
+                                </div>
+                                <div class="flex_row horse_slide_description">
+                                    <p class="h_s_d_title">История:</p>
+                                    <p class="h_s_d_desc">Игривый, любит детей и вообще милашка</p>
+                                </div>
+                            </div>
+                            <button class="slide_button" data-content="horseForm">Хочу познакомиться!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination" style="margin-top: 5vh"></div>
+            </div>
+        </div>
+
+        <div id="eventSlider" class="event_slider_c">
+            <h2 class="event_slider_titile">События</h2>
+            <div class="swiper-container event_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide event_slide_c flex_row">
+                        <div class="event_left flex_column">
+                            <p class="event_title">Lorem Ipsum</p>
+                            <p class="event_description text_separator_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex nisi, commodo ac tempus dictum,
+                                commodo sed metus. Quisque at cursus nisi, nec finibus nibh. Duis purus est, venenatis at
+                                sem ac, gravida varius dui. Pellentesque nisl tellus, facilisis eget commodo malesuada, varius
+                                sit amet dui.</p>
+                        </div>
+                        <div class="event_right flex_column">
+                            <div class="big_image_c flex_row">
+                                <img class="big_image" src="images/advantages_image_5.1.jpg">
+                            </div>
+                            <div class="thumbnail_container flex_row flex_wrap">
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_5.1.jpg' style="background-image: url('images/advantages_image_5.1.jpg')"></div>
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_444.jpg' style="background-image: url('images/advantages_image_444.jpg')"></div>
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_3.jpg' style="background-image: url('images/advantages_image_3.jpg')"></div>
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_4.jpg' style="background-image: url('images/advantages_image_4.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide event_slide_c flex_row">
+                        <div class="event_left flex_column">
+                            <p class="event_title">Lorem Ipsum</p>
+                            <p class="event_description text_separator_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex nisi, commodo ac tempus dictum,
+                                commodo sed metus. Quisque at cursus nisi, nec finibus nibh. Duis purus est, venenatis at
+                                sem ac, gravida varius dui. Pellentesque nisl tellus, facilisis eget commodo malesuada, varius
+                                sit amet dui.</p>
+                        </div>
+                        <div class="event_right flex_column">
+                            <div class="big_image_c flex_row">
+                                <img class="big_image" src="images/advantages_image_5.1.jpg">
+                            </div>
+                            <div class="thumbnail_container flex_row flex_wrap">
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_5.1.jpg' style="background-image: url('images/advantages_image_5.1.jpg')"></div>
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_444.jpg' style="background-image: url('images/advantages_image_444.jpg')"></div>
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_3.jpg' style="background-image: url('images/advantages_image_3.jpg')"></div>
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_4.jpg' style="background-image: url('images/advantages_image_4.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide event_slide_c flex_row">
+                        <div class="event_left flex_column">
+                            <p class="event_title">Lorem Ipsum</p>
+                            <p class="event_description text_separator_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex nisi, commodo ac tempus dictum,
+                                commodo sed metus. Quisque at cursus nisi, nec finibus nibh. Duis purus est, venenatis at
+                                sem ac, gravida varius dui. Pellentesque nisl tellus, facilisis eget commodo malesuada, varius
+                                sit amet dui.</p>
+                        </div>
+                        <div class="event_right flex_column">
+                            <div class="big_image_c flex_row">
+                                <img class="big_image" src="images/advantages_image_5.1.jpg">
+                            </div>
+                            <div class="thumbnail_container flex_row flex_wrap">
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_5.1.jpg' style="background-image: url('images/advantages_image_5.1.jpg')"></div>
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_444.jpg' style="background-image: url('images/advantages_image_444.jpg')"></div>
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_3.jpg' style="background-image: url('images/advantages_image_3.jpg')"></div>
+                                <div class="thumbnail_i background_center" data-src='images/advantages_image_4.jpg' style="background-image: url('images/advantages_image_4.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination" style="margin-top: 5vh"></div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="contact" class="contact_container scroll_data" data-anchor="contact">
+
+            <h2 class="map_title">Нас легко найти</h2>
+
+            <div id="map"></div>
+        </div>
+        </div>
+
+
+
+        <div id="my_form" class="form_main_container scroll_data" data-anchor="my_form">
+            <div class="form_text_container">
+                <h2 class="form_text_title">Первая
+                    <br>тренировка</h2>
+                <p class="form_small_text text_separator_left">Запишись на первую бесплатную тренировку.
+                    <br>Оставь свои контакты, и мы перезвоним, чтобы договориться о дате и времени.
+                    <p>
+            </div>
+            <!-- <div class="form_separator"></div> -->
+            <!-- <div class="form_blur"></div> -->
+            <div class="form_container">
+                <form role="form" method="post" action="extens/mail.php">
+                    <div class="form-group">
+                        <input name="prenume" type="text" class="form-control" id="form_prenume" placeholder="Имя*" required>
+                    </div>
+                    <div class="form-group">
+                        <input name="phone" type="tel" class="form-control" id="form_phone" placeholder="Телефон*" required>
+                    </div>
+                    <div class="form-group">
+                        <input name="email" type="email" class="form-control" id="form_email" aria-describedby="emailHelp" placeholder="E-mail*"
+                            required>
+                    </div>
+                    <div style="width: 100%; margin-top: 1.6vh;">
+                        <button type="submit" class="button form_button">
+                            <p>Отправить</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+
+        <!-- <div class="container-fluid conditions">
+            <div class="container container_padding">
+                <h2>Мы предоставляем комфортные условия для тренировок: </h2>
+                <div class="conditions_main_container">
+                    <div class="conditions_container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <p class="condition">Удобный подъезд автотранспортом</p>
+                    </div>
+                    <div class="conditions_container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <p class="condition">Близкое расположение от метро Речной Вокзал</p>
+                    </div>
+                    <div class="conditions_container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <p class="condition">Два плаца с евро грунтом</p>
+                    </div>
+                    <div class="conditions_container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <p class="condition">Большая охраняемая автопарковка</p>
+                    </div>
+                    <div class="conditions_container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <p class="condition">Удобная раздевалка</p>
+                    </div>
+                    <div class="conditions_container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <p class="condition">Два крытых манежа</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- <div class="modal_c">
+            <div class="modal_close flex_column">x</div>
+            <div class="modal_i">
+                
+            </div>
+        </div> -->
+        <!-- <div class="modal_c">
+            <div class="modal_close flex_column">x</div>
+            <div class="modal_i">
+                <div class="form_c flex_column">
+
+                    <div class="horse_profile_c flex_row">
+                        <div class="h_p_image_c">
+                                <img class="slide_img" src="images/horse-1201143__340.jpg">
+                        </div>
+                        <div class="h_p_text_c flex_column">
+                            <p class="h_p_text h_p_name">Маня</p>
+                            <p class="h_p_text h_p_old">18 лет</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="h_p_desc_c flex_row">
+                            <p class="h_p_desc_title">О себе</p>
+                            <p class="h_p_desc_text">Умная и красивая, люблю солнышко, бегать и прыгать. Обожаю яблоки, морковку и сухарики</p>
+                        </div>
+
+                    <p class="horse_modal_cta">С нетерпением жду нашей встречи, если ты тоже - скажи свой телефон и как к тебе обращаться, я обязательно передам хозяйке и она организует нам приятный и веселый день</p>
+
+                    
+                    <form role="form" method="post" action="extens/mail.php">
+                        <div class="form-group">
+                            <input name="prenume" type="text" class="form-control" id="form_prenume" placeholder="Имя*" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="phone" type="tel" class="form-control" id="form_phone" placeholder="Телефон*" required>
+                        </div>
+                        <button class="btnSuccess" type="submit">Связаться</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="to-top">Back to top</div> -->
+
+    </main>
+    <script src="js/all.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIUeDlC_iEvWQcZEabwulEBzveY7ZB4NM"></script>
+    <script src="js/map.js"></script>
+    <script src="js/jquery.scroolly.js"></script>
+    <script src="js/scroll.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script> -->
+    <script src="js/swiper.min.js"></script>
+
+
+    <script src="js/lightgallery.js"></script>
+    <script src="js/lg-zoom.js"></script>
+    <!-- <script src="../js/lg-video.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/g/lightgallery,lg-thumbnail"></script>
+
+
+    <!-- <script>
+        $(document).ready(function () {
+
+            $("form").submit(function (e) {
+                e.preventDefault();
+                var form = $(this);
+                var msg = form.serialize();
+
+                $.ajax({
+                    type: 'POST',
+                    url: "extens/mail.php",
+                    data: msg,
+                    success: function (data) {
+                        // if (data != ""){
+                        alert('sent');
+                        location.reload();
+                        // }
+                    },
+                    error: function (xhr, str) {
+                        alert('Error: ' + xhr.responseCode);
+                    }
+                });
+            });
+
+        });
+    </script> -->
+    <script>
+
+    </script>
+
+    <script>
+        // <!-- 
+        //         var horseSwiper = new Swiper('#horseSlide .swiper-container', {
+        //             slidesPerView: 4,
+        //             spaceBetween: 0,
+        //             loop: true,
+        //             pagination: {
+        //                 el: '#horseSlide .swiper-pagination',
+        //                 clickable: true,
+        //             },
+        //             breakpoints: {
+
+        //                 500: {
+        //                     slidesPerView: 1,
+
+        //                 },
+        //                 767: {
+        //                     slidesPerView: 2,
+        //                 },
+        //                 2560: {
+        //                     slidesPerView: 4,
+        //                 }
+        //             }
+        //         }); -->
+
+        
+
+
+
+
+
+    </script>
+
+
+    <!-- Че добавить:
+    Достижения на главную
+    Иконки че предлагаем сделать кликабельными и забить инфу
+    Добавить галлерею, деленную на двое. Наши кони и все фото.
+    Добавить номера и соц сети. -->
+
+
+
+</body>
+
+</html>
